@@ -16,6 +16,7 @@
 }
 
 .galleries-toggler-container button {
+  color: white;
   background-color: transparent;
   border: none;
   margin: 0 0.5rem;
