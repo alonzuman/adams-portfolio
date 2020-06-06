@@ -9,9 +9,9 @@ export default function GalleriesPage() {
   const motion = data.galleriesPage.galleries.motion
   return (
     <div className='container'>
-      <ul>
-        <li><button onClick={() => setIsStills(true)}>Stills</button> </li>
-        <li><button onClick={() => setIsStills(false)}>Motion</button> </li>
+      <ul className='galleries-toggler-container'>
+        <li><button className={isStills && 'selected'} onClick={() => setIsStills(true)}>Stills</button> </li>
+        <li><button className={!isStills && 'selected'} onClick={() => setIsStills(false)}>Motion</button> </li>
       </ul>
       {isStills &&
         <div className='galleries-container'>

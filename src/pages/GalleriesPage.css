@@ -4,3 +4,30 @@
   gap: 1rem;
   padding: 1rem;
 }
+
+.galleries-toggler-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.galleries-toggler-container li {
+  list-style: none;
+}
+
+.galleries-toggler-container button {
+  background-color: transparent;
+  border: none;
+  margin: 0 0.5rem;
+}
+
+.galleries-toggler-container button:focus {
+  outline: none;
+  border: none;
+}
+
+.selected {
+  border-bottom: 1px solid pink!important;
+  transition: border-bottom 1s ease-in-out;
+}
+
