@@ -1,0 +1,10 @@
+.footer-menu {
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+.footer-menu li {
+  list-style: none;
+}
