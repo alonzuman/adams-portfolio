@@ -11,9 +11,9 @@ export default function OpenPhoto({ photo, isOpen, setIsOpen }) {
   return (
     <div className='full-page-photo-container'>
       <div className='box-shadow'>
-        <button className='close-button' onClick={handleClose}>Close</button>
+        <button className='close-button icon-button' onClick={handleClose}><i className="fas fa-times"></i></button>
         <img src={photo} className='full-page-photo' alt='' />
       </div>
-    </div>
+    </div >
   )
 }

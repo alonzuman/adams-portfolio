@@ -18,7 +18,7 @@ export default function Photo({ photo }) {
       <div onClick={handleOpen}>
         <div className='gallery-photo-container' onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)} >
           <img src={photo.img} className='gallery-photo' alt={photo.title} />
-          {isHover && <div className='photo-description-container' />}
+          {isHover && <div className='photo-description-container'>{photo.title}</div>}
         </div>
       </div>
     )
