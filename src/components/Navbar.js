@@ -53,10 +53,10 @@ export default function Navbar() {
         <NavLink to='/' exact >
           <h2>By Adam</h2>
         </NavLink>
-        {!isOpen && <button onClick={handleOpen}>Open menu</button>}
+        {!isOpen && <button className='icon-button' onClick={handleOpen}><i className="fas fa-bars"></i></button>}
         {isOpen &&
           <div className='mobile-menu-container'>
-            <button className='close-menu-button' onClick={handleClose}>Close menu</button>
+            <button className='icon-button close-menu-button' onClick={handleClose}><i className="fas fa-times"></i></button>
             <ul className='mobile-menu-list'>
               <li><NavLink activeClassName='nav-item-active' exact onClick={handleClose} to='/'>Home</NavLink></li>
               <li><NavLink activeClassName='nav-item-active' onClick={handleClose} to='/galleries'>Galleries</NavLink></li>

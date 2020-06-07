@@ -9,9 +9,6 @@ export default function AboutPage() {
           className='hero-banner' />
         <h1>About me</h1>
       </div>
-      <div className='container'>
-        This is the about page
-      </div>
     </div>
   )
 }

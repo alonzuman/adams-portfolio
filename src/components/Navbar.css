@@ -56,7 +56,7 @@
 }
 
 .nav-item {
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 .nav-item a {
@@ -65,4 +65,10 @@
 
 .nav-item-active {
   border-bottom: 1px solid pink;
+}
+
+@media only screen and (max-width: 760px) {
+  .navbar-container {
+    padding: 1rem;
+  }
 }

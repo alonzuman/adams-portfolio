@@ -8,7 +8,7 @@ export default function GalleryThumb({ gallery }) {
     <Link to={`/galleries/${gallery.id}`}>
       <div className='gallery-thumb'>
         <img src={gallery.img} className='thumb-photo' alt={gallery.title} />
-        <h1>{gallery.title}</h1>
+        <h2>{gallery.title}</h2>
       </div>
     </Link>
   )
